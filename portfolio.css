@@ -12,6 +12,15 @@ body{
     background: var(--dark-mode);
     margin:0;
     overflow-x: hidden;
+    animation: .5s ease-in-out 1 alternate fadein;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 header{
     min-width: 0vw;
