@@ -12,7 +12,7 @@ body{
     background: var(--dark-mode);
     margin:0;
     overflow-x: hidden;
-    animation: .5s ease-in-out 1 alternate fadein;
+    animation: .7s ease-in-out 1 alternate fadein;
 }
 @keyframes fadein {
     0% {
