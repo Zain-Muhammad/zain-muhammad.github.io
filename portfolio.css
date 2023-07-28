@@ -305,7 +305,7 @@ footer span{
     height: 20px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 10%;
     transform: translate(-50%);
     border-radius: 50%;
     background: linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%);
