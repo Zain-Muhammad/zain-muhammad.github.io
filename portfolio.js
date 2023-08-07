@@ -21,18 +21,8 @@ const iteration = () => {
         count = 0;
     }
 };
-let inthandle = setInterval(iteration, 1000);
+let inthandle = setInterval(iteration, 2500);
 iteration();
-
-// <div id="change">Web Design Specialist</div>
-// #change {
-//     transition: transform 0.5s;
-//     display: inline-block;
-//     }
-//     .out {
-//         transform: scale(0);
-//     }
-// code for change the specialities
 
 
 /* cursor js */
