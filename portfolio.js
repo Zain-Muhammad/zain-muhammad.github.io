@@ -21,7 +21,7 @@ const iteration = () => {
         count = 0;
     }
 };
-let inthandle = setInterval(iteration, 2500);
+let inthandle = setInterval(iteration, 2000);
 iteration();
 
 
