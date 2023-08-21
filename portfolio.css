@@ -362,6 +362,7 @@ footer span{
         position: -webkit-sticky;
         top: 0px;
         height: fit-content;
+        border-radius: 0px 0px 20px 20px;
     }
     header.active{
         min-width: 992px;

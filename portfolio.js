@@ -4,7 +4,7 @@ function openNav() {
 }
 
 // code for change the specialities
-const symbols = ['Master of User Interfaces', 'HTML, CSS, JS Wizard', 'Web Design Master', 'Responsive Web Developer', 'Code Connoisseur', 'Digital Experience Engineer', 'Frontend Architect', 'UI Automation Expert'];
+const symbols = ['UI Developer', 'Master of UI', 'HTML, CSS, JS Wizard', 'Web Design Master', 'Responsive Web Developer', 'Code Connoisseur', 'Digital Experience Engineer', 'Frontend Architect', 'UI Automation Expert', 'Core Web Vitals'];
 let count = 0;
 const element = document.getElementById("change");
 const iteration = () => {
