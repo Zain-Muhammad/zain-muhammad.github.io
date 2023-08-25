@@ -39,3 +39,21 @@ document.addEventListener('click', e => {
     }, 500);
 });
 /* cursor js */
+
+// add the class and remove when you click another nav-item with same class and add to the current
+const contentElements = document.querySelectorAll('.links .n_links');
+
+contentElements.forEach((content) => {
+    content.addEventListener('click', function() {
+        // Remove the active class from all content elements
+        contentElements.forEach((element) => {
+        element.classList.remove('active');
+        });
+        
+        // Add the active class to the clicked content element
+        this.classList.add('active');
+    });
+});
+// add the class and remove when you click another nav-item with same class and add to the current
+
+

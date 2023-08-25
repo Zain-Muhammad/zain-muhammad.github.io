@@ -4,6 +4,8 @@
     --light-content: #A7A7A7;
     --solid-heading-dark-mode: #CCC;
     --popins:'Poppins', sans-serif;
+    --gradient-color1:#ff4d4d;
+    --gradient-color2:#f9cb28;
 }
 html{
     scroll-behavior: smooth;
@@ -61,8 +63,8 @@ header.active{
     position: relative;
     transition: 0.2s ease-in-out;
 }
-.n_links:hover{
-    background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
+.n_links:hover,.n_links.active{
+    background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -72,6 +74,21 @@ header.active{
     /* line-height: 20px; */
     transition: 0.2s ease-in-out;
 }
+/* links border hover effect */
+.links .n_links:after {
+    display      : block;
+    content      : '';
+    border-bottom: solid 4px #ccc;
+    border-radius: 4px;
+    transform    : scaleX(0);
+    transform-origin: 0 50%;
+    transition   : transform 300ms ease-in-out;
+    margin-top: 10px;
+}
+.links .n_links:hover:after,.links .n_links.active:after {
+    transform: scaleX(1);
+}
+/* links border hover effect */
 .n_links,.s_link{
     text-decoration: none;
     color: var(--light-content);
@@ -85,7 +102,7 @@ header.active{
     position: relative;
 }
 .logo{
-    background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
+    background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -112,7 +129,7 @@ header.active{
     font-weight: 700;
 }
 .my-info-disc span{
-    background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
+    background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -126,6 +143,9 @@ header.active{
 .profile-wrapper{
     width: 230px;
     height: 230px;
+    border-radius: 50%;
+    padding: 8px;
+    background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
 }
 .profile-img{
     height: 100%;
@@ -163,7 +183,7 @@ display: inline-block;
 }
 .position-pill{
     border-radius: 100px;
-    background: linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%);
+    background: linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%);
     color: var(--button-text, #D9D9D9);
     font-weight: 700;
     padding: 4px 16px;
@@ -266,7 +286,7 @@ display: inline-block;
 }
 .my-mail{
     text-decoration: none;
-    background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
+    background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -292,7 +312,7 @@ footer{
 }
 footer span{
     text-decoration: none;
-    background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
+    background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -308,7 +328,7 @@ footer span{
     left: 1%;
     transform: translate(-50%);
     border-radius: 50%;
-    background: linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%);
+    /* background: linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%); */
     pointer-events: none;
     z-index: 111;
     transition: all 0.2s ease-out;
