@@ -1,5 +1,5 @@
 :root{
-    --dark-mode: #191919;
+    --dark-mode: #161616;
     --dm-sans: 'DM Sans', sans-serif;
     --light-content: #A7A7A7;
     --solid-heading-dark-mode: #CCC;
@@ -453,7 +453,7 @@ footer span{
         margin: auto;
         text-align: center;
         width: 100%;
-        background: #191919;
+        background: var(--dark-mode);
         padding: 10px;
     }
 }
