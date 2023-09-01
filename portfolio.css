@@ -366,6 +366,106 @@ footer span{
     }
 }
 /* cursor css */
+/* download resume btn css*/
+.button.download {
+    position: fixed;
+    width: 185px;
+    height: auto;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    top: 8px;
+    right: 16px;
+    font-family: var(--dm-sans);
+    color: var(--dark-mode);
+}
+
+.radio {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    background: linear-gradient(90deg, var(--gradient-color1) 50%, var(--gradient-color2) 50%) no-repeat;
+    background-position: right center;
+    background-size: 200% 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.button a:hover, .radio:hover + a {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.button a:active {
+    box-shadow: none;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+.open {
+    display: none;
+}
+
+.radio:checked ~ a {
+    animation: loading 5s linear forwards 1;
+}
+
+.radio:checked + .download {
+    display: none;
+}
+
+.radio:checked ~ .open {
+    display: block;
+}
+
+@keyframes loading {
+0% { 
+    height: 100%; 
+    padding: 20px;
+    background-position: right center;
+    color: transparent;
+    box-shadow: none;
+    pointer-events: none;
+}
+2% { 
+    height: 5px; 
+    padding: 0 20px;
+    color: transparent;
+    pointer-events: none;
+}
+95% { 
+    height: 5px; 
+    padding: 0 20px;
+    background-position: left center;
+    color: transparent;
+    pointer-events: none;
+}
+100% {
+    height: 100%; 
+    padding: 18px 20px;
+    background-position: left center;
+    color: #FFF;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    z-index: 4;
+    pointer-events: auto;
+}
+}
+/* download resume btn css*/
 @media screen and (min-width: 992px) {
     .my-container{
         max-width: 992px;
@@ -455,5 +555,11 @@ footer span{
         width: 100%;
         background: var(--dark-mode);
         padding: 10px;
+    }
+    .button.download {
+        margin: 0px;
+        top: auto;
+        bottom: 10px;
+        width: 200px;
     }
 }
