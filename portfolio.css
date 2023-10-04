@@ -145,11 +145,14 @@ header.active{
     height: 230px;
     border-radius: 50%;
     padding: 8px;
+    overflow: hidden;
     background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
 }
 .profile-img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 #change {
 transition: transform 0.5s;
