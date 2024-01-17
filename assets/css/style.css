@@ -1032,9 +1032,20 @@ section .container {
   border-radius: 2px;
   font-weight: 600;
 }
+.portfolio .portfolio-wrap .portfolio-links .pf-gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
 
+}
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
+  background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
+  color: #fff;
 }
 
 .portfolio .portfolio-wrap:hover::before {
