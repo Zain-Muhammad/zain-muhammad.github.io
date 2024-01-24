@@ -108,7 +108,12 @@ h6 {
   padding: 0;
   margin: 0;
 }
-
+.freelance-pf img{
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 #header .social-links {
   margin-top: 40px;
   display: flex;
