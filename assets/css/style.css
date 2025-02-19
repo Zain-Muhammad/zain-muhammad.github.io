@@ -28,7 +28,92 @@ body::before {
   height: 100vh;
   z-index: -1;
 }
+/* animated roles */
+/* From Uiverse.io by kennyotsu */ 
+.role-title .loader {
+  color: rgb(124, 124, 124);
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 10px;
+  font-family: var(--dm-sans);
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+  background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.words {
+  overflow: hidden;
+  position: relative;
+}
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: spin_4991 12s infinite;
+  -webkit-animation: spin_4991 12s infinite;
+}
+
+@keyframes spin_4991 {
+  10% {
+    -webkit-transform: translateY(-102%);
+    transform: translateY(-102%);
+  }
+
+  25% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  35% {
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  60% {
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+
+  75% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+
+  85% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-402%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+}
+
+/* animated roles */
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
@@ -479,7 +564,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 18px;
-  padding-bottom:20px;
+  margin-bottom:0px;
   background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
   background-clip: text;
   -webkit-background-clip: text;
@@ -524,11 +609,17 @@ section .container {
   width: 100%;
   position: relative;
   text-align: center;
-  background: rgb(54 54 54 / 62%);
+  background: #3636369e;
   border-radius: 2px 16px 2px 16px;
   font-family: var(--dm-sans);
+  border: 2px solid transparent;
+  background: linear-gradient(#212121, #212121) padding-box,linear-gradient(145deg, transparent 35%,var(--gradient-color1), var(--gradient-color2) ) border-box;
+  transform-origin: right bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
-
+.counts .count-box:hover {
+  rotate: 4deg;
+}
 .counts .count-box i {
   position: absolute;
   top: -25px;
@@ -629,6 +720,10 @@ section .container {
   border-radius: 2px 16px 2px 16px;
   transition: ease-in-out 0.3s;
   margin-top:30px;
+  border: 2px solid transparent;
+  background: linear-gradient(#212121, #212121) padding-box,linear-gradient(145deg, transparent 35%,var(--gradient-color1), var(--gradient-color2) ) border-box;
+  transform-origin: right bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 .interests .row{
   align-items: flex-end;
@@ -827,6 +922,13 @@ section .container {
   border-radius: 2px 16px;
   transition: all ease-in-out 0.3s;
   margin-top: 42px;
+  border: 2px solid transparent;
+  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, var(--gradient-color1), var(--gradient-color2)) border-box;
+  transform-origin: right bottom;
+  transition: all 0.6scubic-bezier(0.23, 1, 0.320, 1);
+}
+.services .icon-box:hover {
+  rotate: 2deg;
 }
 .services .align-items-stretch{
   z-index: 1;
@@ -837,7 +939,7 @@ section .container {
     font-size: 50px;
     font-weight: 700;
     right: 23px;
-    z-index: -1;
+    /* z-index: -1; */
     color: var(--solid-heading-dark-mode);
     font-family: var(--dm-sans);
     transition: 0.2s ease-in-out;
