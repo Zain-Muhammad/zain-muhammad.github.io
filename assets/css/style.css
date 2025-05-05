@@ -192,6 +192,9 @@ body::before {
   border:none;
   font-weight: 600;
 }
+.available-for-btn:hover{
+  color: #178d00;
+}
 .circle {
   display: flex;
   align-items: center;
@@ -431,7 +434,7 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--dark-mode);
 }
 
 #header.header-top .social-links,
