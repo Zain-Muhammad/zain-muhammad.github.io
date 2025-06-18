@@ -8,6 +8,7 @@
   /* #FF057C */
   --gradient-color2: #8D0B93;
   --animation: 2s ease-in-out infinite;
+  --white-color:#ffffff;
 }
 body {
   font-family: var(--popins);
@@ -384,17 +385,28 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--light-content);
+  background: var(--white-color);
   color: var(--dark-mode);
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
 }
 
-#header .social-links a:hover,footer .social-links a:hover {
-  background: #fff;
+#header .social-links a:hover,footer .social-links a:hover,.first-lo.social-links a:hover {
+  background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
+  color:var(--white-color);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 
 @media (max-width: 992px) {
