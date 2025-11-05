@@ -60,7 +60,7 @@ Semantic HTML, CSS pre-processors (e.g., SASS, LESS), Frontend testing (e.g., Je
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header-top">
+  <header id="header" class="header-top container">
     <div class="container">
 
       <h1><a href="index.html">Zain Muhammad</a></h1>
@@ -103,23 +103,15 @@ Semantic HTML, CSS pre-processors (e.g., SASS, LESS), Frontend testing (e.g., Je
         <p>about me</p>
       </div> -->
 
-      <div class="row align-items-center">
-        <div class="col-lg-4 dp-wrapper" data-aos="fade-right">
-          <img src="assets/img/pfp.png" class="img-fluid" alt="" style="filter: opacity(0.9);">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Senior Frontend Developer at oladoc.com | UX/UI Designer</h3>
-          <div class="role-title">
-            <div class="loader">
-              <div class="words">
-                <span class="word">| Performance-Driven UX/UI Developer & Designer</span> 
-                <span class="word">| Crafting Success in Every Pixel </span>
-                <span class="word">| Developing High-Speed, High-Impact Web Apps UI </span>
-                <span class="word">| E2E Front-end Testing Expert </span>
-                <span class="word">| Performance Optimization Expert </span>
-              </div>
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="content" data-aos="fade-left" style="max-width:750px;padding:0px;">
+          <div class="img-title-wrapper">
+            <div class="profile-image-wrapper">
+              <img src="assets/img/profile-img-1.png" alt="Profile Image" class="profile-img">
             </div>
+            <div class="title-pill">Sr. Frontend Developer | UX/UI Designer</div>
           </div>
+          <h1 class="pf-title">I Craft ideas into seamless digital experiences through clean code and thoughtful design that inspire users.</h1>
           <!-- companies marquee -->
            <div class="marquee">
             <div class="marquee__inner">
@@ -170,6 +162,9 @@ Semantic HTML, CSS pre-processors (e.g., SASS, LESS), Frontend testing (e.g., Je
                 <img src="assets/img/companies/odxbolo.png" alt="odxbolo" loading="lazy">
               </div>
               <div class="marquee__item">
+                <img src="assets/img/companies/itfalcon-company.png" alt="alphory" loading="lazy">
+              </div>
+              <div class="marquee__item">
                 <img src="assets/img/companies/alphory-logo_compressed.webp" alt="alphory" loading="lazy">
               </div>
               <div class="marquee__item">
@@ -188,8 +183,9 @@ Semantic HTML, CSS pre-processors (e.g., SASS, LESS), Frontend testing (e.g., Je
             </div>
           </div>
           <!-- companies marquee -->
-          <div class="ctas-wrapper">
-          <a href="#portfolio" class="nav-link call-button" style="--clr: #8d0b93">
+          
+          <div class="ctas-wrapper d-flex justify-content-center align-items-center">
+          <a href="#portfolio" class="nav-link call-button" style="--clr: var(--white-color);">
             <span class="button__icon-wrapper">
               <svg
                 viewBox="0 0 14 15"
@@ -227,7 +223,7 @@ Semantic HTML, CSS pre-processors (e.g., SASS, LESS), Frontend testing (e.g., Je
             Available for new project
           </a>
           </div>
-          <div class="first-lo social-links">
+          <div class="first-lo social-links d-flex justify-content-center align-items-center">
             <a href="https://www.linkedin.com/in/zain-sher/" target="_blank" class="linkedin" aria-label="linkedin link"><i class="bi bi-linkedin"></i></a>
             <a href="https://www.figma.com/design/1e43OfQuUVaoWtkPjg2dbT/talldaniel?node-id=94-538&t=Q25SfAP1gASxcoH6-1" target="_blank" class="freelance-pf" aria-label="figma link"><img src="assets\tech\figma.svg" alt="figma portfolio" style="border-radius:0px;"></a>
             <a href="https://github.com/Zain-Muhammad" target="_blank" class="github" aria-label="github link"><i class="bi bi-github"></i></a>
@@ -235,22 +231,6 @@ Semantic HTML, CSS pre-processors (e.g., SASS, LESS), Frontend testing (e.g., Je
             <a href="https://www.fiverr.com/zain_sher_work" target="_blank" class="freelance-pf" aria-label="fiver link"><img src="assets/img/fiver.png" alt="fiver"></a>
             <a href="https://www.upwork.com/freelancers/~0130192932e353c465" target="_blank" class="freelance-pf" aria-label="upwork link"><img src="assets/img/upwork.ico" alt="upwork"></a>
           </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <a href="tel:+923225034501">+92 322 5034501</a></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Computer Science</span></li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <a href="mailto:zainsher5@gmail.com">zainsher5@gmail.com</a></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Experience:</strong> <span>6+ Years</span></li>
-              </ul>
-            </div>
-          </div>
-          <p class="abt-disc">I’m Zain, a <strong>Senior Frontend Developer</strong> and <strong>CRO UX/UI Designer</strong> passionate about turning complex ideas into intuitive, engaging, and performance-driven digital experiences.
-          <br>I blend design thinking with clean engineering to build interfaces that don’t just look good — they feel right.</p>
         </div>
       </div>
 
@@ -258,9 +238,28 @@ Semantic HTML, CSS pre-processors (e.g., SASS, LESS), Frontend testing (e.g., Je
 
     <!-- ======= Counts ======= -->
     <div class="counts container">
-
+      <div class="section-title">
+        <h2>About</h2>
+        <p>about me</p>
+      </div>
+      <div class="about-content" style="max-width:750px;">
+        <h3 class="about-title">Senior Frontend Developer at oladoc.com | UX/UI Designer</h3>
+            <div class="role-title">
+              <div class="loader">
+                <div class="words">
+                  <span class="word">| Performance-Driven UX/UI Developer & Designer</span> 
+                  <span class="word">| Crafting Success in Every Pixel </span>
+                  <span class="word">| Developing High-Speed, High-Impact Web Apps UI </span>
+                  <span class="word">| E2E Front-end Testing Expert </span>
+                  <span class="word">| Performance Optimization Expert </span>
+                </div>
+              </div>
+            </div>
+            <p class="abt-disc">I’m Zain, a <strong class="focused-pill">Senior Frontend Developer</strong> and <strong class="focused-pill">CRO UX/UI Designer</strong> with <strong class="focused-pill">6+ Years</strong> of Experience passionate about turning complex ideas into intuitive, engaging, and performance-driven digital experiences.
+            <br>I blend design thinking with clean engineering to build interfaces that don’t just look good — they feel right.</p>
+      </div>
       <div class="row">
-
+        
         <div class="col-lg-4 col-md-6">
           <div class="count-box">
             <i class="bi bi-emoji-smile"></i>
@@ -284,16 +283,213 @@ Semantic HTML, CSS pre-processors (e.g., SASS, LESS), Frontend testing (e.g., Je
             <p>Hours Of Support</p>
           </div>
         </div>
-
       </div>
 
     </div><!-- End Counts -->
+    <!-- experience -->
+    <div class="container">
+      <div class="experience-wrapper" style="max-width:750px;">
+          <div class="section-title">
+            <h2>Industry Experience</h2>
+            <p>Years of Trusted Delivery</p>
+          </div>
+          <div class="experience-tile">
+              <div class="company-logo">
+                <img src="assets/img/companies/od.png" alt="company logo" class="company-logo-icon">
+              </div>
+              <div class="company-experience-wrapper">
+                <div class="designation">
+                  Senior Frontend Developer | UX/UI Designer
+                </div>
+                <div class="company-title-wrapper">
+                  <div class="company-nm">oladoc</div>
+                  <div class="joining-status">Oct 2020 - Present</div>
+                </div>
+              </div>
+              <div class="roleshort-discription">
+                Leading the frontend development and UX/UI design for Pakistan’s largest digital healthcare platform. As the sole frontend developer since 2020, I’ve built and optimized responsive, accessible, and high-performing web experiences that have powered over <strong>9 million teleconsultations</strong> and served <strong>50 million+</strong> users. I bridge design and engineering to craft interfaces that enhance usability, scalability, and overall product performance.
+              </div>
+          </div>
+          <div class="experience-tile">
+              <div class="company-logo">
+                <img src="assets/img/companies/itfalcon-company.png" alt="company logo" class="company-logo-icon" style="object-fit: cover;">
+              </div>
+              <div class="company-experience-wrapper">
+                <div class="designation">
+                  Frontend Developer | UX/UI Designer
+                </div>
+                <div class="company-title-wrapper">
+                  <div class="company-nm">ITFalcons</div>
+                  <div class="joining-status">Jan 2020 - Oct 2020</div>
+                </div>
+              </div>
+              <div class="roleshort-discription">
+                At IT Falcons, I led end-to-end frontend development and UX/UI design for diverse client projects, delivering visually engaging, high-performing, and responsive web experiences. Focused on creating user-centered interfaces that blend functionality with design excellence.
+              </div>
+          </div>
+
+          <div class="experience-tile">
+              <div class="company-logo">
+                <img src="assets/img/companies/itfalcon-company.png" alt="company logo" class="company-logo-icon" style="object-fit: cover;">
+              </div>
+              <div class="company-experience-wrapper">
+                <div class="designation">
+                  Assistant Frontend Developer | UX/UI Designer
+                </div>
+                <div class="company-title-wrapper">
+                  <div class="company-nm">ITFalcons</div>
+                  <div class="joining-status">Sep 2019 - Jan 2020</div>
+                </div>
+              </div>
+          </div>
+
+          <div class="experience-tile">
+              <div class="company-logo">
+                <img src="assets/img/companies/confidential.png" alt="company logo" class="company-logo-icon" style="object-fit: cover;">
+              </div>
+              <div class="company-experience-wrapper">
+                <div class="designation">
+                  Business Experience
+                </div>
+                <div class="company-title-wrapper">
+                  <div class="company-nm">Freelancing</div>
+                  <div class="joining-status">2019 - Present</div>
+                </div>
+              </div>
+              <div class="roleshort-discription">
+                Built over 100+ successful partnerships with startups and agencies worldwide, delivering high-quality UX/UI design and frontend development solutions across North America, Europe, Africa, Asia, and beyond. Proven expertise in creating impactful digital experiences for global brands.
+              </div>
+          </div>
+          <div class="ctas-wrapper d-flex justify-content-center align-items-center" style="margin-top: 30px;">
+              <a href="#resume" class="nav-link call-button" style="--clr: var(--white-color);">
+                <span class="button__icon-wrapper">
+                  <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg"
+                    width="10"
+                  >
+                    <path
+                      d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+    
+                  <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    width="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg button__icon-svg--copy"
+                  >
+                    <path
+                      d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </span>
+                Check My Experience
+              </a>
+          </div>
+        </div>
+    </div>
+
+    <!-- work -->
+  <!-- ======= Portfolio Section ======= -->
+  <div class="container work-section">
+
+    <div class="section-title">
+      <h2>Portfolio</h2>
+      <p>My Works</p>
+    </div>
+    <div class="work-wrapper">
+      <div class="work-card">
+        <div class="image-wrapper">
+          <img src="assets/img/companies/od.png" alt="work image" class="work-img">
+        </div>
+        <div class="work-title">
+          oladoc.com | Pakistan’s leading healthcare platform for patients
+        </div>
+        <div class="project-stack-wrapper">
+          <div class="stck-pill">Frontend Development</div>
+          <div class="stck-pill">Product Design</div>
+          <div class="stck-pill">UX</div>
+          <div class="stck-pill">UI</div>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <div class="image-wrapper">
+          <img src="assets/img/companies/my-practice.svg" alt="work image" class="work-img">
+        </div>
+        <div class="work-title">
+          myPractice by oladoc | Pakistan’s leading healthcare platform for doctors
+        </div>
+        <div class="project-stack-wrapper">
+          <div class="stck-pill">Frontend Development</div>
+          <div class="stck-pill">Product Design</div>
+          <div class="stck-pill">UX</div>
+          <div class="stck-pill">UI</div>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <div class="image-wrapper">
+          <img src="assets/img/companies/od.png" alt="work image" class="work-img">
+        </div>
+        <div class="work-title">
+          oladoc.com | Pakistan’s leading healthcare platform
+        </div>
+        <div class="project-stack-wrapper">
+          <div class="stck-pill">Frontend Development</div>
+          <div class="stck-pill">Product Design</div>
+          <div class="stck-pill">UX</div>
+          <div class="stck-pill">UI</div>
+        </div>
+      </div>
+    </div>
+    <div class="ctas-wrapper d-flex justify-content-center align-items-center" style="margin-top: 30px;">
+      <a href="#portfolio" class="nav-link call-button" style="--clr: var(--white-color);">
+        <span class="button__icon-wrapper">
+          <svg
+            viewBox="0 0 14 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="button__icon-svg"
+            width="10"
+          >
+            <path
+              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+              fill="currentColor"
+            ></path>
+          </svg>
+
+          <svg
+            viewBox="0 0 14 15"
+            fill="none"
+            width="10"
+            xmlns="http://www.w3.org/2000/svg"
+            class="button__icon-svg button__icon-svg--copy"
+          >
+            <path
+              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </span>
+        Check My Work
+      </a>
+    </div>
+  </div>
+    <!-- work -->
 
     <!-- ======= Skills  ======= -->
     <div class="skills container">
 
       <div class="section-title">
         <h2>My Tech Stacks</h2>
+        <p>Frontend Development</p>
       </div>
 
       <div class="row skills-content">
@@ -379,6 +575,17 @@ Semantic HTML, CSS pre-processors (e.g., SASS, LESS), Frontend testing (e.g., Je
             <img src="assets\tech\github.svg" alt="techstack" loading="lazy">
             <div class="tech-label">github</div>
           </div>
+        </div>
+
+        <div class="section-title mt-5">
+          <h2>Design Tools</h2>
+          <p>UX/UI</p>
+        </div>
+        <div class="tech-stk">
+          <div>
+            <img src="assets\tech\figma.svg" alt="techstack" loading="lazy">
+            <div class="tech-label">figma</div>
+          </div>
           <div>
             <img src="assets\tech\ps.svg" alt="techstack" loading="lazy">
             <div class="tech-label">adobe Photoshop</div>
@@ -388,15 +595,10 @@ Semantic HTML, CSS pre-processors (e.g., SASS, LESS), Frontend testing (e.g., Je
             <div class="tech-label">adobe illustrator</div>
           </div>
           <div>
-            <img src="assets\tech\figma.svg" alt="techstack" loading="lazy">
-            <div class="tech-label">figma</div>
-          </div>
-          <div>
             <img src="assets\tech\canva.svg" alt="techstack" loading="lazy">
             <div class="tech-label">canva</div>
           </div>
         </div>
-
       </div>
 
     </div><!-- End Skills -->
@@ -1091,6 +1293,13 @@ Semantic HTML, CSS pre-processors (e.g., SASS, LESS), Frontend testing (e.g., Je
                 <a href="portfolio-details1.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details">View Detail<i class="bx bx-link"></i></a>
               </div>
             </div>
+          </div>
+          <div class="project-stack-wrapper">
+            <div class="stck-pill">Frontend Develoment</div>
+            <div class="stck-pill">Html5</div>
+            <div class="stck-pill">CSS3</div>
+            <div class="stck-pill">JavaScript</div>
+            <div class="stck-pill">Alpine.js</div>
           </div>
         </div>
 
