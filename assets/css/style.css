@@ -1,15 +1,15 @@
 :root {
   /* --dark-mode: rgba(0, 0, 0, 0.9); */
-  --dark-mode: #0B0D14;
+  --dark-mode: #000000;
   --dm-sans: 'DM Sans', sans-serif;
   --light-content: #A7A7A7;
   --solid-heading-dark-mode: #CCC;
   --popins: 'Poppins', sans-serif;
-  --gradient-color1: #4CE0E2;
+  --gradient-color1: #F2FD7D;
   /* #FF057C */
-  --gradient-color2: #8D0B93;
+  --gradient-color2: #0F9E99;
   --animation: 2s ease-in-out infinite;
-  --white-color:#ffffff;
+  --white-color:#fff;
 }
 body {
   font-family: var(--popins);
@@ -175,12 +175,12 @@ body::before {
   transform: translate(-150%, 150%);
 }
 
-.call-button:hover .button__icon-svg:first-child {
+.call-button:hover .button__icon-svg:first-child,.work-card:hover .button__icon-svg:first-child{
   transition: transform 0.3s ease-in-out;
   transform: translate(150%, -150%);
 }
 
-.call-button:hover .button__icon-svg--copy {
+.call-button:hover .button__icon-svg--copy,.work-card:hover .button__icon-svg--copy{
   transition: transform 0.3s ease-in-out 0.1s;
   transform: translate(0);
 }
@@ -403,7 +403,7 @@ h6 {
 
 #header .social-links a:hover,footer .social-links a:hover,.first-lo.social-links a:hover {
   background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
-  color:var(--white-color);
+  color:var(--dark-mode);
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -574,6 +574,7 @@ h6 {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  color: var(--dark-mode);
 }
 
 /**
@@ -848,7 +849,7 @@ section .container {
   font-size: 24px;
   background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
   padding: 12px;
-  color: #fff;
+  color: var(--dark-mode);
   border-radius: 50px;
   line-height: 0;
 }
@@ -1105,6 +1106,7 @@ section .container {
   font-weight: 600;
   margin-bottom: 10px;
   border-radius:2px;
+  color: var(--dark-mode);
 }
 
 .resume .resume-item ul {
@@ -1185,7 +1187,7 @@ section .container {
 }
 
 .services .icon-box .icon i {
-  color: #fff;
+  color: var(--dark-mode);
   font-size: 28px;
 }
 
@@ -1221,10 +1223,11 @@ section .container {
 .services .icon-box:hover {
   transition: 0.2s ease-in-out;
   background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
+  color: var(--dark-mode);
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: var(--dark-mode);
 }
 
 .services .icon-box:hover .icon i {
@@ -1240,7 +1243,7 @@ section .container {
 
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
-  color: #fff;
+  color: var(--dark-mode);
 }
 
 /*--------------------------------------------------------------
@@ -1871,6 +1874,19 @@ footer .social-links{
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
+  position: relative;
+}
+.work-card .button__icon-wrapper{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 .work-card .project-stack-wrapper{
   margin-top: 0px;
