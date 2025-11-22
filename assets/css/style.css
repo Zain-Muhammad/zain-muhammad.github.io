@@ -916,7 +916,6 @@ section .container {
 }
 .tech-stk img{
   height: 50px;
-  width: 50px;
 }
 .tech-stk .tech-label{
   padding-top: 16px;
@@ -1732,7 +1731,6 @@ footer .social-links{
   }
   .skills-tech-stck [alt="techstack"]{
     height: 50px;
-    width: 50px;
   }
 /* marquee css */
 .about .content{
