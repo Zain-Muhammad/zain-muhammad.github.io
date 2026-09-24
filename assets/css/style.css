@@ -38,6 +38,7 @@ body::before {
   font-weight: 700;
   font-size: 18px;
   padding-bottom: 10px;
+  line-height: 27px;
   font-family: var(--dm-sans);
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -45,14 +46,11 @@ body::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 8px;
-  background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .words {
+  height: 54px;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -65,7 +63,11 @@ body::before {
 
 .word {
   display: block;
-  height: 100%;
+  height: 54px;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   background: var(--gradient-heading, linear-gradient(90deg, var(--gradient-color1) 2.60%, var(--gradient-color2) 100%));
   background-clip: text;
   -webkit-background-clip: text;
